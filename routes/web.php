@@ -16,6 +16,7 @@
 // });
 
 Route::get('/',['as'=>'Home','uses'=>'PageController@getIndex']);
+Route::get('test-api',['as'=>'Home','uses'=>'PageController@testApi']);
 Route::get('contact-us',['as'=>'contactus','uses'=>'PageController@getContactus']);
 Route::get('about',['as'=>'about','uses'=>'PageController@getabout']);
 Route::get('404',['as'=>'404','uses'=>'PageController@getPage404']);
